@@ -1,0 +1,115 @@
+.main_cont {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .box {
+    width: 350px;
+    height: 90vh;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #d4d2d2;
+    padding: 8px 10px;
+
+    .header {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      .brand {
+        display: flex;
+        gap: 10px;
+        h4 {
+          font-size: 1rem;
+        }
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-width: 20px;
+          height: 20px;
+          width: 20px;
+          min-height: 20px;
+          border-radius: 100%;
+          text-align: center;
+          color: #fff;
+          p {
+            margin: 0;
+            padding: 0;
+            font-size: 0.8rem;
+          }
+        }
+      }
+      button {
+        background: transparent;
+        font-size: 1.5rem;
+        color: gray;
+        outline: none;
+        border: none;
+      }
+    }
+  }
+
+  .cards{
+    width: 100%;
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+    gap: 8px;
+    .card{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      min-height: 150px;
+      background-color: white;
+      border-radius: 8px;
+      border: 1px solid rgb(235, 232, 232);
+      padding: 12px;
+      select{
+        min-width: 70px;
+        width: min-content;
+        margin-top: auto;
+        margin-left: auto;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        border: 1px solid rgb(235, 232, 232);
+        padding:6px 2px;
+      }
+    }
+
+    .pr_wrap{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        button{
+            border: 1px solid rgb(235, 232, 232);
+            padding:2px 8px;
+            background: white;
+            border-radius: 4px;
+        }
+
+    }
+  }
+}
+
+
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(128, 128, 128, 0.349);
+    .modal_box{
+        width: 500px;
+        height: 500px;
+        border-radius: 12px;
+        background-color: white;
+    }
+}
