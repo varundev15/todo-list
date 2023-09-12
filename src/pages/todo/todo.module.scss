@@ -52,13 +52,13 @@
     }
   }
 
-  .cards{
+  .cards {
     width: 100%;
     display: flex;
     height: max-content;
     flex-direction: column;
     gap: 8px;
-    .card{
+    .card {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -67,7 +67,7 @@
       border-radius: 8px;
       border: 1px solid rgb(235, 232, 232);
       padding: 12px;
-      select{
+      select {
         min-width: 70px;
         width: min-content;
         margin-top: auto;
@@ -76,40 +76,82 @@
         border-radius: 10px;
         outline: none;
         border: 1px solid rgb(235, 232, 232);
-        padding:6px 2px;
+        padding: 6px 2px;
       }
     }
 
-    .pr_wrap{
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 10px;
-        button{
-            border: 1px solid rgb(235, 232, 232);
-            padding:2px 8px;
-            background: white;
-            border-radius: 4px;
-        }
-
+    .pr_wrap {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      button {
+        border: 1px solid rgb(235, 232, 232);
+        padding: 2px 8px;
+        background: white;
+        border-radius: 4px;
+      }
     }
   }
 }
 
-
-.modal{
-    position: absolute;
-    top: 0;
-    left: 0;
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: rgba(128, 128, 128, 0.349);
+  .modal_box {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background: rgba(128, 128, 128, 0.349);
-    .modal_box{
-        width: 500px;
-        height: 500px;
-        border-radius: 12px;
-        background-color: white;
+    flex-direction: column;
+    width: 400px;
+    height: max-content;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+
+    h1 {
+      font-weight: 400;
+      font-size: 28px;
+      margin-bottom: 24px;
     }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+
+      p {
+        margin-bottom: 4px;
+        color: rgb(77, 77, 77);
+      }
+    }
+    input,
+    textarea,
+    select {
+      outline: none;
+      border: 1px solid rgba(128, 128, 128, 0.274);
+      border-radius: 8px;
+      min-height: 30px;
+      width: 350px;
+      padding: 5px;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      background-color: black;
+      color: white;
+      border-radius: 15px;
+      outline: none;
+      border: none;
+      height: 35px;
+      margin: 0 auto;
+      margin-top: 25px;
+      cursor: pointer;
+    }
+  }
 }
